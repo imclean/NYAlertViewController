@@ -28,20 +28,20 @@ typedef NS_ENUM(NSInteger, NYAlertViewButtonType) {
 
 @interface NYAlertView : UIView
 
-@property UILabel *titleLabel;
-@property UITextView *messageTextView;
-@property (nonatomic) UIView *contentView;
+@property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UITextView *messageTextView;
+@property (nonatomic,strong) UIView *contentView;
 
-@property (nonatomic) UIFont *buttonTitleFont;
-@property (nonatomic) UIFont *cancelButtonTitleFont;
-@property (nonatomic) UIFont *destructiveButtonTitleFont;
+@property (nonatomic,strong) UIFont *buttonTitleFont;
+@property (nonatomic,strong) UIFont *cancelButtonTitleFont;
+@property (nonatomic,strong) UIFont *destructiveButtonTitleFont;
 
-@property (nonatomic) UIColor *buttonColor;
-@property (nonatomic) UIColor *buttonTitleColor;
-@property (nonatomic) UIColor *cancelButtonColor;
-@property (nonatomic) UIColor *cancelButtonTitleColor;
-@property (nonatomic) UIColor *destructiveButtonColor;
-@property (nonatomic) UIColor *destructiveButtonTitleColor;
+@property (nonatomic,strong) UIColor *buttonColor;
+@property (nonatomic,strong) UIColor *buttonTitleColor;
+@property (nonatomic,strong) UIColor *cancelButtonColor;
+@property (nonatomic,strong) UIColor *cancelButtonTitleColor;
+@property (nonatomic,strong) UIColor *destructiveButtonColor;
+@property (nonatomic,strong) UIColor *destructiveButtonTitleColor;
 
 @property (nonatomic) CGFloat buttonCornerRadius;
 @property (nonatomic) CGFloat maximumWidth;
@@ -51,8 +51,8 @@ typedef NS_ENUM(NSInteger, NYAlertViewButtonType) {
 @property (nonatomic, readonly) NSLayoutConstraint *backgroundViewVerticalCenteringConstraint;
 
 //@property (nonatomic) NSArray *actions;
-@property (nonatomic) NSArray *actionButtons;
+@property (nonatomic,strong) NSArray *actionButtons;
 
-@property (nonatomic) NSArray *textFields;
+@property (nonatomic,strong) NSArray *textFields;
 
 @end

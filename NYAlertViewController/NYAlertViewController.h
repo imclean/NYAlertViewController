@@ -11,7 +11,7 @@
 
 + (instancetype)actionWithTitle:(NSString *)title style:(UIAlertActionStyle)style handler:(void (^)(NYAlertAction *action))handler;
 
-@property (nonatomic) NSString *title;
+@property (nonatomic,strong) NSString *title;
 @property (nonatomic) UIAlertActionStyle style;
 @property (nonatomic, strong) void (^handler)(NYAlertAction *action);
 @property (nonatomic) BOOL enabled;
@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, NYAlertViewControllerTransitionStyle) {
 /**
  The message displayed under the alert view's title
  */
-@property (nonatomic) NSString *message;
+@property (nonatomic,strong) NSString *message;
 
 /**
  The attributed message displayed under the alert view's title
@@ -54,7 +54,7 @@ typedef NS_ENUM(NSInteger, NYAlertViewControllerTransitionStyle) {
  
  @discussion The default value of this property is nil. Set this property to a view that you create to add the custom view to the displayed alert view.
  */
-@property (nonatomic) UIView *alertViewContentView;
+@property (nonatomic,strong) UIView *alertViewContentView;
 
 /**
  The transition style used to animate the alert view's presentation/dismissal transitions.
@@ -80,7 +80,7 @@ typedef NS_ENUM(NSInteger, NYAlertViewControllerTransitionStyle) {
 /**
  The background color of the alert view
  */
-@property (nonatomic) UIColor *alertViewBackgroundColor;
+@property (nonatomic,strong) UIColor *alertViewBackgroundColor;
 
 /**
  The maximum width at which to display the presented alert view
@@ -92,83 +92,83 @@ typedef NS_ENUM(NSInteger, NYAlertViewControllerTransitionStyle) {
  
  @see title
  */
-@property (nonatomic) UIFont *titleFont;
+@property (nonatomic,strong) UIFont *titleFont;
 
 /**
  The font used to display the messsage in the alert view
  
  @see message
  */
-@property (nonatomic) UIFont *messageFont;
+@property (nonatomic,strong) UIFont *messageFont;
 
 /**
  The font used for buttons (actions with style NYAlertActionStyleDefault) in the alert view
  */
-@property (nonatomic) UIFont *buttonTitleFont;
+@property (nonatomic,strong) UIFont *buttonTitleFont;
 
 /**
  The font used for cancel buttons (actions with style NYAlertActionStyleCancel) in the alert view
  */
-@property (nonatomic) UIFont *cancelButtonTitleFont;
+@property (nonatomic,strong) UIFont *cancelButtonTitleFont;
 
 /**
  The font used for destructive buttons (actions with style NYAlertActionStyleDestructive) in the alert view
  */
-@property (nonatomic) UIFont *destructiveButtonTitleFont;
+@property (nonatomic,strong) UIFont *destructiveButtonTitleFont;
 
 /**
  The color used to display the alert view's title
  
  @see title
  */
-@property (nonatomic) UIColor *titleColor;
+@property (nonatomic,strong) UIColor *titleColor;
 
 /**
  The color used to display the alert view's message
  
  @see message
  */
-@property (nonatomic) UIColor *messageColor;
+@property (nonatomic,strong) UIColor *messageColor;
 
 /**
  The background color for the alert view's buttons corresponsing to default style actions
  */
-@property (nonatomic) UIColor *buttonColor;
+@property (nonatomic,strong) UIColor *buttonColor;
 
 /**
  The background color for the alert view's buttons corresponsing to cancel style actions
  */
-@property (nonatomic) UIColor *cancelButtonColor;
+@property (nonatomic,strong) UIColor *cancelButtonColor;
 
 /**
  The background color for the alert view's buttons corresponsing to destructive style actions
  */
-@property (nonatomic) UIColor *destructiveButtonColor;
+@property (nonatomic,strong) UIColor *destructiveButtonColor;
 
 /**
  The background color for the alert view's buttons corresponsing to disabled actions
  */
-@property (nonatomic) UIColor *disabledButtonColor;
+@property (nonatomic,strong) UIColor *disabledButtonColor;
 
 /**
  The color used to display the title for buttons corresponsing to default style actions
  */
-@property (nonatomic) UIColor *buttonTitleColor;
+@property (nonatomic,strong) UIColor *buttonTitleColor;
 
 /**
  The color used to display the title for buttons corresponding to cancel style actions
  */
-@property (nonatomic) UIColor *cancelButtonTitleColor;
+@property (nonatomic,strong) UIColor *cancelButtonTitleColor;
 
 /**
  The color used to display the title for buttons corresponsing to destructive style actions
  */
-@property (nonatomic) UIColor *destructiveButtonTitleColor;
+@property (nonatomic,strong) UIColor *destructiveButtonTitleColor;
 
 /**
  The color used to display the title for buttons corresponsing to disabled actions
  */
-@property (nonatomic) UIColor *disabledButtonTitleColor;
+@property (nonatomic,strong) UIColor *disabledButtonTitleColor;
 
 /**
  The radius of the displayed alert view's corners
