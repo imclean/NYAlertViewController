@@ -539,6 +539,12 @@ static CGFloat const kDefaultDismissalAnimationDuration = 0.6f;
     self.view.messageTextView.text = message;
 }
 
+- (void)setAttributedMessage:(NSMutableAttributedString *)attributedMessage{
+    self.view.messageTextView.textAlignment = NSTextAlignmentCenter;
+    _attributedMessage = attributedMessage;
+    self.view.messageTextView.attributedText = attributedMessage;
+}
+
 - (UIFont *)titleFont {
     return self.view.titleLabel.font;
 }
