@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, NYAlertViewButtonType) {
 @property (nonatomic,strong) UILabel *titleLabel;
 @property (nonatomic,strong) UITextView *messageTextView;
 @property (nonatomic,strong) UIView *contentView;
-
+@property (nonatomic) float placementConstant;
 @property (nonatomic,strong) UIFont *buttonTitleFont;
 @property (nonatomic,strong) UIFont *cancelButtonTitleFont;
 @property (nonatomic,strong) UIFont *destructiveButtonTitleFont;
