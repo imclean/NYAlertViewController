@@ -598,7 +598,7 @@ static CGFloat const kDefaultDismissalAnimationDuration = 0.6f;
 }
 
 - (void)updateContraint:(float)cstnt {
-    self.view.updateContraint(cstnt);
+    [self.view updateContraint:cstnt];
 }
 
 - (UIColor *)titleColor {
