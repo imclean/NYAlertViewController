@@ -53,5 +53,5 @@ typedef NS_ENUM(NSInteger, NYAlertViewButtonType) {
 @property (nonatomic,strong) NSArray *actionButtons;
 
 @property (nonatomic,strong) NSArray *textFields;
-
+- (void)updateContraint:(float)cstnt;
 @end

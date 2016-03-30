@@ -486,6 +486,16 @@
         }
     }
 }
+- (void)updateContraint:(float)cstnt {
+    _backgroundViewVerticalCenteringConstraint = [NSLayoutConstraint constraintWithItem:self.alertBackgroundView
+                                                                              attribute:NSLayoutAttributeCenterY
+                                                                              relatedBy:NSLayoutRelationEqual
+                                                                                 toItem:self
+                                                                              attribute:NSLayoutAttributeCenterY
+                                                                             multiplier:1.0f
+                                                                               constant:cstnt];
+    [self layoutIfNeeded];
+}
 
 - (void)setActionButtons:(NSArray *)actionButtons {
     for (UIButton *button  in self.actionButtons) {

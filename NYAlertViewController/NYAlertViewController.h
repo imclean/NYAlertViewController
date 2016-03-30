@@ -205,5 +205,5 @@ typedef NS_ENUM(NSInteger, NYAlertViewControllerTransitionStyle) {
  @param configurationHandler A block used to configure the text field. The block takes the text field object as a parameter, and can modify the properties of the text field prior to being displayed.
  */
 - (void)addTextFieldWithConfigurationHandler:(void (^)(UITextField *textField))configurationHandler;
-
+- (void)updateContraint:(float)cstnt;
 @end

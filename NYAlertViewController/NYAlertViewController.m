@@ -597,6 +597,10 @@ static CGFloat const kDefaultDismissalAnimationDuration = 0.6f;
     }];
 }
 
+- (void)updateContraint:(float)cstnt {
+    NYAlertView(self.view).updateContraint(cstnt);
+}
+
 - (UIColor *)titleColor {
     return self.view.titleLabel.textColor;
 }
